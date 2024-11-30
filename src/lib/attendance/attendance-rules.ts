@@ -1,0 +1,35 @@
+export const ATTENDANCE_RULES = {
+  ON_TIME: {
+    POINTS: 0,
+  },
+  TARDY: {
+    THRESHOLD_MINUTES: 5,
+    POINTS: 1,
+    UNDER_15_MIN: 1,
+    OVER_15_MIN: 2,
+    OVER_30_MIN: 3,
+  },
+  LEFT_EARLY: {
+    THRESHOLD_MINUTES: 5,
+    POINTS: 1,
+    UNDER_15_MIN: 1,
+    OVER_15_MIN: 2,
+    OVER_30_MIN: 3,
+  },
+  NO_SHOW: {
+    POINTS: 3,
+  },
+  CALLED_OFF: {
+    WITH_APPROVAL: 0.5,
+    WITHOUT_APPROVAL: 2,
+    EXPIRATION_DAYS: 30,
+  },
+  COMPLETED: {
+    POINTS: 0,
+  },
+  CONSEQUENCES: {
+    WARNING_THRESHOLD: 3,
+    PROBATION_THRESHOLD: 6,
+    TERMINATION_THRESHOLD: 9,
+  },
+};
